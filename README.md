@@ -1,1 +1,1 @@
-# chassis-vip-mu-plugins
+# mu-plugins for Chassis VIP Extension
