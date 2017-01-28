@@ -1,12 +1,5 @@
 <?php
 
-if ( defined( 'SUBDOMAIN_INSTALL' ) && SUBDOMAIN_INSTALL || 1 === get_current_blog_id() ) {
-    if ( ! defined( 'QUICKSTART_DISABLE_CONCAT' ) || ! QUICKSTART_DISABLE_CONCAT ) {
-	require __DIR__ . '/http-concat/cssconcat.php';
-	require __DIR__ . '/http-concat/jsconcat.php';
-    }
-}
-
 // Add X-hacker header
 add_action( 'send_headers', function() {
 	header( "X-hacker: If you're reading this, you should visit automattic.com/jobs and apply to join the fun, mention this header." );
